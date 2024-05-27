@@ -1,0 +1,121 @@
+.major{
+  background-size: cover;
+  &__wrapper{
+    max-width: 1510px;
+    padding-left: 55px;
+    padding-top: 157px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    margin-top: 58px;
+    max-width: 905px;
+  }
+  &__title{
+    font-size: 120px;
+    line-height: 120px;
+    color: rgba(102, 37, 165, 1);
+  }
+  &__btns{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  &__btn{
+    @include btn;
+    background-color: rgba(254, 209, 48, 1);
+    font-size: 40px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+  }
+  &__video{
+    padding: 17.5px 60px;
+    font-size: 30px;
+    border-radius: 100px;
+    line-height: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+
+    img{
+      width: auto;
+      height: 20px;
+    }
+  }
+  &__text{
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    img{
+      width: 25px;
+      height: 25px;
+    }
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+    max-width: 835px;
+    span{
+      font-weight: 700;
+    }
+  }
+  &__desc{
+    margin-right: 51px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px 85px 20px 35px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5em;
+    background-repeat: no-repeat;
+    background-position: bottom 0pc right 17px;
+    span{
+      color: rgba(102, 37, 165, 1);
+    }
+  }
+  &__slider{
+    max-width: 535px;
+    position: relative;
+    
+    &-wrapper{
+      img{
+        width: 535px;
+        height: 796px;
+        object-fit: cover;
+      }
+    }
+  }
+  &__prev{
+    position: absolute;
+    top: 75px;
+    left: 55px;
+    z-index: 5;
+  }
+  &__next{
+    position: absolute;
+    bottom: 125px;
+    right: 55px;
+    z-index: 5;
+  }
+  &__start{
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+    padding: 20px 50px;
+    background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
+    text-wrap: nowrap;
+    width: min-content;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+    border-radius: 30px 30px 0 0;
+  }
+}

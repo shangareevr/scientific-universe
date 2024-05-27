@@ -1,0 +1,112 @@
+.about{
+  position: relative;
+  &__wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgba(102, 37, 165, 1);
+    padding: 80px 0 0 100px;
+    border-radius: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: bottom 120px right 248px;
+    color: #ffffff;
+    min-height: 702px;
+  }
+  &__content{
+    max-width: 620px;
+  }
+  &__title{
+    @include title;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  &__subtitle{
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 46.32px;
+    text-transform: uppercase;
+  }
+  &__img{
+    margin-right: -39.5px;
+    width: 491px;
+    height: 621px;
+    position: relative;
+    bottom: -12px;
+  }
+  &__list{
+    li{
+      margin-top: 20px;
+      position: relative;
+      padding-left: 22px;
+      font-family: 'Inter';
+      font-size: 20px;
+      line-height: 1.5em;
+      font-weight: 400;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 3px solid rgba(254, 209, 48, 1);
+        border-radius: 50%;
+      }
+    }
+  }
+  &__info{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    position: absolute;
+    bottom: -128px;
+    background-color: rgba(254, 209, 48, 1);
+    border-radius: 40px;
+    padding: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  &__for{
+    font-size: 40px;
+    line-height: 46.32px;
+    max-width: 750px;
+    text-transform: uppercase;
+  }
+  &__items{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  &__item{
+    max-width: 231px;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight:400;
+    font-family: 'Inter';
+    div{
+      background-color: rgba(102, 37, 165, 1);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 30px;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+    p{
+      margin-top: 10px;
+    }
+  }
+}
