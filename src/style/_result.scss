@@ -1,0 +1,57 @@
+.result{
+  &__wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 140px;
+    background-color: rgba(102, 37, 165, 1);
+    border-radius: 80px;
+    padding: 80px 0;
+    padding-left: 100px;
+    position: relative;
+  }
+  &__title{
+    @include title;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    max-width: 602px;
+  }
+  &__year{
+    font-size: 40px;
+    line-height: 1em;
+    color: rgba(254, 209, 48, 1);
+    text-transform: uppercase;
+  }
+  &__btns{
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    display: flex;
+    gap: 10px;
+  }
+  &__link{
+    display: flex;
+    padding: 17px 50px;
+    gap: 6px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    width: min-content;
+    text-wrap: nowrap;
+    border-radius: 100px;
+    img{
+      width: 20px;
+      height: auto;
+    }
+  }
+  &__btn{
+    padding: 17px 50px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
+    border-radius: 100px;
+  }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

@@ -1,11 +1,13 @@
 .major{
   background-size: cover;
+  border-radius: 0 0 200px 200px;
   &__wrapper{
     max-width: 1510px;
     padding-left: 55px;
     padding-top: 157px;
     display: flex;
     justify-content: space-between;
+
   }
   &__content{
     margin-top: 58px;
@@ -117,5 +119,6 @@
     line-height: 23px;
     color: #ffffff;
     border-radius: 30px 30px 0 0;
+    text-transform: uppercase;
   }
 }

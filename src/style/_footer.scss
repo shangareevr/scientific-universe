@@ -1,0 +1,71 @@
+.footer{
+  margin-top: 160px;
+  background-color: rgba(102, 37, 165, 1);
+  border-radius: 80px 80px 0 0;
+  width: 100%;
+  font-family: 'Inter';
+  font-weight: 400;
+  &__wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    display: flex;
+    flex-direction: column;
+    gap: 14.5px;
+    font-size: 17px;
+    line-height: 25.5px;
+    color: rgb(255, 255, 255);
+
+  }
+  &__logo{
+    width: 192px;
+    height: 37px;
+  }
+  &__part{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    p{
+      max-width: 212px;
+    }
+    img{
+      height: 60px;
+      width: auto;
+    }
+  }
+  &__links{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.5em;
+    a{
+      color: rgb(255, 255, 255);
+    }
+  }
+  &__contacts{
+    font-family: 'HalvarBreit';
+  font-weight: 900;
+  max-width: 415px;
+  font-size: 20px;
+  line-height: 23.16px;
+  color: rgb(255, 255, 255);
+  }
+  &__email{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    span{
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.experts{
+  &__wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding-left: 260px;
+  }
+  &__top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    img{
+      width: 60px;
+      height: 60px
+    }
+  }
+  &__title{
+    @include title;
+    text-transform: uppercase;
+  }
+  &__block{
+    max-width: 1400px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__text{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+  &__arrows{
+    display: flex;
+    gap: 10px;
+  }
+  &__arrow{
+    background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__slider{
+    margin-top: 40px;
+    position: relative;
+    .slick-track{
+      display: flex;
+      gap: 20px;
+    }
+  }
+  &__item{
+    width: 335px;
+    min-height: 616px;
+    &.digital{
+      .experts__photo,
+      .experts__category{
+        background-color: rgba(26, 198, 188, 1);
+    }
+  }
+  &.arctic{
+    .experts__photo,
+      .experts__category{
+        background-color: rgba(116, 159, 173, 1);
+      }
+    }
+  &.ecology{
+    .experts__photo,
+      .experts__category{
+        background-color:rgba(183, 192, 60, 1);
+      }
+    }
+  &.technologies{
+    .experts__photo,
+      .experts__category{
+        background-color:rgba(252, 142, 93, 1);
+      }
+    }
+    &.genetics{
+      .experts__photo,
+        .experts__category{
+          background-color:rgba(98, 207, 128, 1);
+        }
+      }
+  }
+  &__photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    img{
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name{
+    margin-top: 20px;
+    padding: 0 20px;
+    font-size: 30px;
+    line-height: 1em;
+    text-transform: uppercase;
+  }
+  &__category{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    p{
+      font-size: 20px;
+      line-height: 1em;
+      color: rgb(255, 255, 255);
+      text-transform: uppercase;
+    }
+    img{
+      height: 40px;
+      width: auto;
+    }
+  }
+  &__desc{
+    margin-top: 20px;
+    padding: 0 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  &__fon{
+    top: 0;
+    right: -2px;
+    position: absolute;
+    width: 260px;
+    height: 100%;
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1));
+  }
+}
