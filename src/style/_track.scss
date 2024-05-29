@@ -2,9 +2,12 @@
   &__wrapper{
     margin: 0 auto;
     margin-top: 300px;
+    max-width: 1480px;
+    padding: 0 40px;
   }
   &__title{
-    @include title;
+    font-size: 80px;
+    line-height: 1em;
     text-transform: uppercase;
   }
   &__list{

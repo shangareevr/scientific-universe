@@ -1,9 +1,8 @@
 .experts{
   &__wrapper{
-    max-width: 1920px;
+    max-width: 1400px;
     margin: 0 auto;
     margin-top: 140px;
-    padding-left: 260px;
   }
   &__top{
     display: flex;
@@ -48,6 +47,7 @@
   &__slider{
     margin-top: 40px;
     position: relative;
+    margin-right: -260px;
     .slick-track{
       display: flex;
       gap: 20px;

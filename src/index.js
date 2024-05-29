@@ -4,6 +4,7 @@ $('.major__slider-wrapper').slick({
   speed: 1000,
   fade: false,
   cssEase: 'linear',
+  zIndex:0,
   prevArrow: $('.major__prev'),
   nextArrow: $('.major__next'),
 });
@@ -72,3 +73,7 @@ $('.support__info_wrapper').slick({
   rtl:true
 });
 
+$('.header__burger').click(function(){
+  $(this).toggleClass('active');
+  $('.header__nav').toggleClass('active');
+})

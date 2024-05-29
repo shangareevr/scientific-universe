@@ -7,22 +7,121 @@
   &__wrapper{
     display: flex;
     justify-content: space-between;
+    padding: 0 40px;
     padding-top: 38px;
     align-items: center;
+    max-width: 1480px;
+    margin: 0 auto;
+    gap: 88px;
+    position: relative;
+    @media(max-width:1200px){
+      padding-top: 20px;
+    }
+    @media(max-width:1000px){
+      padding: 10px;
+      padding-bottom: 0;
+      gap: 0;
+    }
+  }
+  &__logo{
+    width: auto;
+    height: 37px;
+    @media(max-width:800px){
+      width: auto;
+      height: 30px;
+    }
+  }
+  &__nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 945px;
+    @media(max-width:1200px){
+      gap: 75px;
+    }
+    @media(max-width:1000px){
+      display: none;
+      position: absolute;
+      flex-direction: column;
+      background-color: #ffffff;
+      top: 64px;
+      gap: 30px;
+      width:340px;
+      right: 0;
+      padding: 20px;
+      border-radius: 20px;
+    }
+    &.active{
+      display: flex;
+    }
   }
   &__btns{
     display: flex;
     gap: 10px;
+    @media(max-width:1000px){
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__btn{
     text-align: center;
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
-    @include btn;
+    border-radius: 100px;
+    padding: 10px 30px;
     background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
     width: fit-content;
     text-transform: uppercase;
+  }
+  &__burger{
+    display: none;
+    @media(max-width:1000px){
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(102, 37, 165, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span{
+        width:18px;
+        height: 2px;
+        background-color: #ffffff;
+        position: relative;
+        transition: all ease 0.3s;
+        &::after,
+        &::before{
+          content: '';
+          display: block;
+          position: absolute;
+          width: 18px;
+          height: 2px;
+          background-color: #ffffff;
+          transition: all ease 0.3s;
+        }
+        &::after{
+          bottom: -7px;
+        }
+        &::before{
+          top: -7px;
+        }
+      }
+    }
+    &.active{
+      span{
+        background:none;
+        &::after{
+          transform: rotate(-45deg);
+          top: 0;
+        }
+        &::before{
+          transform: rotate(45deg);
+          top: 0;
+        }
+      }
+    }
   }
 }
 .nav{
@@ -33,5 +132,13 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 25.5px;
+    @media(max-width:1200px){
+      gap: 40px;
+    }
+    @media(max-width:1000px){
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
   }
 }

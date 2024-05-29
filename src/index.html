@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slick.min.js"></script>
 </head>
 <body>
   <header class="header">
-    <div class="header__wrapper container">
-      <img src="./img/logo.png" alt="Научная Вселенная">
+    <div class="header__wrapper">
+      <img class="header__logo" src="./img/logo.png" alt="Научная Вселенная">
+      <div class="header__burger">
+        <span></span>
+      </div>
       <nav class="header__nav">
         <ul class="nav__list">
           <li><a href="" class="nav__item">Итоги</a></li>
           <li><a href="" class="nav__item">Вебинары</a></li>
           <li><a href="" class="nav__item">Новости</a></li>
         </ul>
+        <div class="header__btns">
+          <a href="#" class="header__btn">Регистрация</a>
+          <a href="#" class="header__btn">Вход</a>
+        </div>
       </nav>
-      <div class="header__btns">
-        <a href="#" class="header__btn">Регистрация</a>
-        <a href="#" class="header__btn">Вход</a>
-      </div>
+      
     </div>
   </header>
   <main class="main">
     <section class="major" style="background-image:url('./img/bg.png');">
-      <div class="major__wrapper container">
+      <div class="major__wrapper">
         <div class="major__content">
           <h1 class="major__title">НАУЧНАЯ ВСЕЛЕННАЯ</h1>
           <div class="major__btns">
@@ -44,11 +47,11 @@
           </div>
           <div class="major__text">
             <img src="./img/icon.svg" alt="">
-            <p><span> Молодые ученые — </span> те,  кто прямо сейчас создают историю и совершают открытия, поделятся уникальными знаниями и выступят в роли наставников для финалистов.</p>
+            <p><span> Молодые ученые —</span> те, кто прямо сейчас создают историю и совершают открытия, поделятся уникальными знаниями и выступят в роли наставников для финалистов.</p>
           </div>
           <div class="major__desc" style="background-image: url('./img/fi_1021202.svg');">
-            Победители Конкурса отправятся в путешествие на <span>научно-технологические 
-              площадки,</span> где разрабатываются и применяются самые современные технологии.
+            Победители Конкурса отправятся в путешествие на <span>научно-<br>технологические 
+              площадки,</span> <br>где разрабатываются <br> и применяются самые современные технологии.
           </div>
         </div>
         <div class="major__slider">
@@ -75,7 +78,7 @@
             Научная Вселенная — это возможность:
           </div>
           <ul class="about__list">
-            <li>узнать интересную информацию, которой нет в учебниках</li>
+            <li>узнать интересную информацию, <br> которой нет в учебниках</li>
             <li>проявить себя и прокачать навыки</li>
             <li>пообщаться с ведущими экспертами</li>
             <li>«побывать в будущем»: увидеть самые перспективные 
@@ -109,7 +112,7 @@
       </div>
     </section>
     <section class="track">
-      <div class="track__wrapper container">
+      <div class="track__wrapper">
         <h2 class="track__title">треки</h2>
         <div class="track__list">
           <div class="track__item track__item_blue">
@@ -179,7 +182,7 @@
         </div>
       </div>
     </section>
-    <section class="stages" style="background-image:url('./img/bg.png');">
+    <!-- <section class="stages" style="background-image:url('./img/bg.png');">
       <div class="stages__wrapper">
         <div class="stages__top">
           <div class="stages__titles">
@@ -248,8 +251,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="webinar">
+    </section> -->
+    <!-- <section class="webinar">
       <div class="webinar__wrapper">
         <div class="webinar__left">
           <h2 class="webinar__title">
@@ -303,8 +306,8 @@
           <a href="#" class="webinar__btn">все вебинары</a>
         </div>
       </div>
-    </section>
-    <section class="experts">
+    </section> -->
+    <!-- <section class="experts">
       <div class="experts__wrapper">
         <div class="experts__top">
           <h2 class="experts__title">эксперты</h2>
@@ -393,8 +396,8 @@
           <div class="experts__fon"></div>
         </div>
       </div>
-    </section>
-    <section class="idea" style="background-image:url('./img/bg.png');">
+    </section> -->
+    <!-- <section class="idea" style="background-image:url('./img/bg.png');">
       <div class="idea__wrapper">
         <div class="idea__left">
           <h2 class="idea__title">
@@ -432,8 +435,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="results">
+    </section> -->
+    <!-- <section class="results">
       <div class="result__wrapper">
         <h2 class="result__title">Итоги конкурса</h2>
         <p class="result__year">2023 года</p>
@@ -448,8 +451,8 @@
         </div>
         <img class="result__img" src="./img/ermak_x5F_03.svg" alt="">
       </div>
-    </section>
-    <section class="news">
+    </section> -->
+    <!-- <section class="news">
       <div class="news__wrapper">
         <div class="news__top">
           <h2 class="news__title">Наши новости</h2>
@@ -505,8 +508,8 @@
           </div>
           <a href="#" class="news__link">все новости</a>
       </div>
-    </section>
-    <section class="support">
+    </section> -->
+    <!-- <section class="support">
       <div class="support__wrapper">
         <h2 class="support__title">Нас поддерживают</h2>
         <h3 class="support__subtitle">СТРАТЕГИЧЕСКИЕ ПАРТНЕРЫ</h3>
@@ -667,9 +670,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__left">
         <img class="footer__logo" src="./img/footer_logo.svg" alt="">
@@ -700,6 +703,6 @@
         </a>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 </html>
