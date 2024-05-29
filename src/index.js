@@ -2,9 +2,8 @@ import './index.html';
 import './style.scss';
 $('.major__slider-wrapper').slick({
   speed: 1000,
-  fade: false,
+  fade: true,
   cssEase: 'linear',
-  zIndex:0,
   prevArrow: $('.major__prev'),
   nextArrow: $('.major__next'),
 });

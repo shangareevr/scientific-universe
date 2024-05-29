@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="./js/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -57,14 +62,17 @@
         <div class="major__slider">
           <img src="./img/arrow_prev.svg" class="major__prev" alt="Arrow">
           <img src="./img/arrow_next.svg" class="major__next" alt="Arrow">
-          <div class="major__slider-wrapper">
-            <div class="major__slider">
-              <img src="./img/8.png" alt="">
-            </div>
-            <div class="major__slider">
-              <img src="./img/1.png" alt="">
+          <div class="major__slider">
+            <div class="major__slider-wrapper">
+              <div class="major__slide">
+                <img src="./img/8.png" alt="">
+              </div>
+              <div class="major__slide">
+                <img src="./img/1.png" alt="">
+              </div>
             </div>
           </div>
+          
         </div>
 
       </div>
@@ -182,7 +190,7 @@
         </div>
       </div>
     </section>
-    <!-- <section class="stages" style="background-image:url('./img/bg.png');">
+    <section class="stages" style="background-image:url('./img/bg.png');">
       <div class="stages__wrapper">
         <div class="stages__top">
           <div class="stages__titles">
@@ -200,59 +208,71 @@
               <div class="stages__date">05.06 - 05.08</div>
               <div class="stages__icon"></div>
             </div>
-            <h3 class="stages__subtitle">тестирование</h3>
-            <div class="stages__text">
-              <span>Все участники</span>
-               проходят двухуровневое тестирование по темам выбранного трека
+            <div class="stages__el">
+              <h3 class="stages__subtitle">тестирование</h3>
+              <div class="stages__text">
+                <span>Все участники</span>
+                 проходят двухуровневое тестирование по темам выбранного трека
+              </div>
             </div>
+            
           </div>
           <div class="stages__item">
             <div class="stages__header">
               <div class="stages__date">06.08 - 20.08</div>
               <div class="stages__icon"></div>
             </div>
-            <h3 class="stages__subtitle">Решение <br> кейсов</h3>
-            <div class="stages__text">
-              <span>ТОП-160 участников</span>
-              предлагают решения индустриальных кейсов своего трека
+            <div class="stages__el">
+              <h3 class="stages__subtitle">Решение <br> кейсов</h3>
+              <div class="stages__text">
+                <span>ТОП-160 участников</span>
+                предлагают решения индустриальных кейсов своего трека
+              </div>
             </div>
+            
           </div>
           <div class="stages__item">
             <div class="stages__header">
               <div class="stages__date">29.08 - 15.09</div>
               <div class="stages__icon"></div>
             </div>
-            <h3 class="stages__subtitle">
-              Работа <br> с наставниками </h3>
-            <div class="stages__text">
-              <span>32 финалиста</span>
-              <br>
-              <p>
-                <img src="./img/fi_19406.svg" alt="">
-                16 школьников
-              </p>
-              <p>
-                <img src="./img/edu2.svg" alt="">
-                16 студентов
-              </p>
-              дорабатывают решение кейсов с наставниками
+            <div class="stages__el">
+              <h3 class="stages__subtitle">
+                Работа <br> с наставниками </h3>
+              <div class="stages__text">
+                <span>32 финалиста</span>
+                <br>
+                <p>
+                  <img src="./img/fi_19406.svg" alt="">
+                  16 школьников
+                </p>
+                <p>
+                  <img src="./img/edu2.svg" alt="">
+                  16 студентов
+                </p>
+                дорабатывают решение кейсов с наставниками
+              </div>
             </div>
+            
           </div>
           <div class="stages__item">
             <div class="stages__header">
               <div class="stages__date">05.06 - 05.08</div>
               <div class="stages__icon"></div>
             </div>
-            <h3 class="stages__subtitle">Защита кейсов <br> в Москве</h3>
+            <div class="stages__el">
+              <h3 class="stages__subtitle">Защита кейсов <br> в Москве</h3>
             <div class="stages__text">
               <span>16 победителей</span>
                отправляются в научные путешествия
             </div>
+            </div>
+            
           </div>
         </div>
       </div>
-    </section> -->
-    <!-- <section class="webinar">
+    </section>
+    <section class="webinar">
       <div class="webinar__wrapper">
         <div class="webinar__left">
           <h2 class="webinar__title">
@@ -281,7 +301,7 @@
           </div>
         </div>
         <div class="webinar__right">
-          <img src="./img/peresvet_x5F_06.svg" alt="">
+          <img class="webinar__fon" src="./img/peresvet_x5F_06.svg" alt="">
           <div class="webinar__cart" style="background-image: url('./img/bg.png');">
             <div class="webinar__top">
               <div class="webinar__status">
@@ -306,8 +326,8 @@
           <a href="#" class="webinar__btn">все вебинары</a>
         </div>
       </div>
-    </section> -->
-    <!-- <section class="experts">
+    </section>
+    <section class="experts">
       <div class="experts__wrapper">
         <div class="experts__top">
           <h2 class="experts__title">эксперты</h2>
@@ -396,19 +416,20 @@
           <div class="experts__fon"></div>
         </div>
       </div>
-    </section> -->
-    <!-- <section class="idea" style="background-image:url('./img/bg.png');">
+    </section>
+    <section class="idea" style="background-image:url('./img/bg.png');">
       <div class="idea__wrapper">
         <div class="idea__left">
           <h2 class="idea__title">
             Уникальные возможности
             <img src="./img/fi_10212.svg" alt="">
           </h2>
-          <div class="idea__content" style="background-image:url('./img/OBJECT.svg');">
+          <div class="idea__content">
             <p>
               Идея твоего научного проекта может внести вклад в решение <br> <span>большого вызова </span>
               <img src="./img/hicon.svg" alt="">
             </p>
+            <img src="./img/OBJECT.svg" alt="">
           </div>
         </div>
         <div class="idea__right">
@@ -435,8 +456,8 @@
           </div>
         </div>
       </div>
-    </section> -->
-    <!-- <section class="results">
+    </section>
+    <section class="results">
       <div class="result__wrapper">
         <h2 class="result__title">Итоги конкурса</h2>
         <p class="result__year">2023 года</p>
@@ -451,8 +472,8 @@
         </div>
         <img class="result__img" src="./img/ermak_x5F_03.svg" alt="">
       </div>
-    </section> -->
-    <!-- <section class="news">
+    </section>
+    <section class="news">
       <div class="news__wrapper">
         <div class="news__top">
           <h2 class="news__title">Наши новости</h2>
@@ -508,8 +529,8 @@
           </div>
           <a href="#" class="news__link">все новости</a>
       </div>
-    </section> -->
-    <!-- <section class="support">
+    </section>
+    <section class="support">
       <div class="support__wrapper">
         <h2 class="support__title">Нас поддерживают</h2>
         <h3 class="support__subtitle">СТРАТЕГИЧЕСКИЕ ПАРТНЕРЫ</h3>
@@ -670,9 +691,9 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__left">
         <img class="footer__logo" src="./img/footer_logo.svg" alt="">
@@ -703,6 +724,6 @@
         </a>
       </div>
     </div>
-  </footer> -->
+  </footer>
 </body>
 </html>
