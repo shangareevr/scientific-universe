@@ -67,22 +67,39 @@
   }
   &__clew{
     position: relative;
+  }
+  &__img{
+    width: 184px;
+    height: 184px;
+    position: relative;
+    left: -88px;
     img{
-      width: 184px;
-      height: 184px;
-      position: relative;
-      left: -88px;
-      @media(max-width:1400px){
-        left: -53px;
-        width: 124px;
-        height: 124px;
-      }
-      @media(max-width:800px){
-        left: -31px;
-        top: 25px;
-        width: 84px;
-        height: 84px;
-      }
+      position: absolute;
+      width: 100%;
+      transition: all 0.5s ease;
+    }
+    .img1{
+      opacity: 1;
+      animation: show1 15s linear infinite;
+    }
+    .img2{
+      opacity: 0;
+      animation: show2 15s linear infinite;
+    }
+    .img3{
+      opacity: 0;
+      animation: show3 15s linear infinite;
+    }
+    @media(max-width:1400px){
+      left: -53px;
+      width: 124px;
+      height: 124px;
+    }
+    @media(max-width:800px){
+      left: -31px;
+      top: 25px;
+      width: 84px;
+      height: 84px;
     }
   }
   &__block{
@@ -94,6 +111,7 @@
     text-transform: uppercase;
     top: -49px;
     color:white;
+    z-index: 5;
     @media(max-width:1400px){
       border-radius: 0px 100px 100px 90px;
       top: -34px;
@@ -265,5 +283,59 @@
       margin-top: 5px;
       padding-bottom: 10px;
     }
+  }
+}
+
+@keyframes show1 {
+  0% {
+    opacity: 1;
+  }
+  30% {
+   opacity: 1;
+  }
+  31% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes show2 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  66%{
+    opacity: 1;
+  }
+  66%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes show3 {
+  0% {
+   opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  66%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
   }
 }

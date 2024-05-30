@@ -3,21 +3,42 @@
     margin-top: 140px;
     width: 100%;
     overflow: hidden;
+    @media(max-width:1400px){
+      margin-top: 80px;
+    }
+    @media(max-width:800px){
+      margin-top: 50px;
+    }
   }
   &__title{
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 0 auto;
-    @include title;
+    font-size: 80px;
+    padding: 0 40px;
+    line-height: 1em;
     text-transform: uppercase;
+    @media(max-width:1400px){
+      font-size: 50px;
+    }
+    @media(max-width:800px){
+      padding: 0 10px;
+      font-size: 30px;
+    }
   }
   &__subtitle{
-    max-width: 1400px;
+    max-width: 1480px;
     margin: 0 auto;
+    padding: 0 40px;
     margin-top: 60px;
     font-size: 30px;
     line-height: 1em;
     text-transform: uppercase;
     color: rgba(102, 37, 165, 1);
+    @media(max-width:800px){
+      padding: 10px;
+      font-size: 20px;
+      margin-top: 20px;
+    }
   }
   .slick-list{
     overflow: visible;
@@ -25,9 +46,13 @@
   .slick-track{
     display: flex;
     gap: 20px;
-  }
-  &__stategic{
-    margin-top: 20px;
+    img{
+      max-height: 67px;
+      max-width: 100%;
+      @media(max-width:800px){
+          height: auto;
+        }
+    }
   }
   &__stategic_slide{
     width: 238.75px !important;
@@ -38,17 +63,23 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
     &:hover{
       .support__bubl{
         opacity: 1;
+        z-index: 5;
       }
     }
+    @media(max-width:800px){
+      width: 180px !important;
+      height: 80px !important;
+      margin-top: 10px;
+    }
   }
-  &___img{
-    object-fit: cover;
-    height: 67px;
-    max-width: 100%;
+  &__info{
+    margin-top: 20px;
   }
+
   &__bubl{
     position: absolute;
     width: 220px;

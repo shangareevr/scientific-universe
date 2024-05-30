@@ -41,3 +41,14 @@ body{
   overflow-x: hidden;
   box-sizing: border-box;
 }
+.slick-arrow{
+  cursor: pointer;
+}
+.slick-arrow:not(.major__prev):not(.major__next){
+  transition: all ease 0.3s;
+  @media(hover:hover){
+    &:hover{
+      background: #6625A5;
+    }
+  }
+}

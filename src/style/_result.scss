@@ -1,25 +1,57 @@
 .result{
+  padding: 0 40px;
+  @media(max-width:800px){
+    padding: 0 10px;
+  }
   &__wrapper{
     max-width: 1400px;
     margin: 0 auto;
     margin-top: 140px;
     background-color: rgba(102, 37, 165, 1);
     border-radius: 80px;
-    padding: 80px 0;
+    padding: 80px 0px;
     padding-left: 100px;
     position: relative;
+    @media(max-width:1400px){
+      margin-top: 70px;
+      padding: 60px;
+      overflow-x: clip;
+      border-radius: 40px;
+    }
+    @media(max-width:800px){
+      margin-top: 40px;
+      padding: 20px;
+      border-radius: 20px;
+    }
   }
   &__title{
-    @include title;
+    font-size: 80px;
+    line-height: 1em;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     max-width: 602px;
+    position: relative;
+    z-index: 3;
+    @media(max-width:1400px){
+      font-size: 50px;
+      max-width: 50%;
+    }
+    @media(max-width:800px){
+      font-size: 30px;
+    }
   }
   &__year{
     font-size: 40px;
     line-height: 1em;
     color: rgba(254, 209, 48, 1);
     text-transform: uppercase;
+    @media(max-width:1400px){
+      margin-top: 10px;
+      font-size: 25px;
+    }
+    @media(max-width:800px){
+      font-size: 20px;
+    }
   }
   &__btns{
     margin-top: 60px;
@@ -28,6 +60,17 @@
     text-transform: uppercase;
     display: flex;
     gap: 10px;
+    position: relative;
+    z-index: 3;
+    @media(max-width:1400px){
+      margin-top: 40px;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @media(max-width:800px){
+      margin-top: 19px;
+      font-size: 16px;
+    }
   }
   &__link{
     display: flex;
@@ -42,16 +85,48 @@
       width: 20px;
       height: auto;
     }
+    @media(max-width:800px){
+      padding: 10px 30px;
+    }
+    transition: all ease 0.3s;
+    @media(hover:hover){
+      &:hover{
+        color: rgba(44, 37, 51, 1);
+        background: #FED130;
+      }
+    }
   }
   &__btn{
     padding: 17px 50px;
     color: rgb(255, 255, 255);
     background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
     border-radius: 100px;
+    width: fit-content;
+    @media(max-width:800px){
+      padding: 10px 30px;
+    }
+    transition: all ease 0.3s;
+    @media(hover:hover){
+      &:hover{
+        color: rgba(44, 37, 51, 1);
+        background: #FED130;
+      }
+    }
   }
   &__img{
     position: absolute;
     bottom: 0;
     right: 0;
+    @media(max-width:1400px){
+      right: -131px;
+      width: 615px;
+      height: auto;
+    }
+    @media(max-width:1000px){
+      right: -129px;
+      width: 78%;
+      height: auto;
+      min-width: 202px;
+    }
   }
 }

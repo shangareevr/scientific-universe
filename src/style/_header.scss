@@ -4,6 +4,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+  z-index: 10;
   &__wrapper{
     display: flex;
     justify-content: space-between;
@@ -48,7 +49,7 @@
       top: 64px;
       gap: 30px;
       width:340px;
-      right: 0;
+      right: 10px;
       padding: 20px;
       border-radius: 20px;
     }
@@ -74,6 +75,12 @@
     background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
     width: fit-content;
     text-transform: uppercase;
+    transition: all ease 0.3s;
+    @media(hover:hover){
+      &:hover{
+        background: #6625A5;
+      }
+    }
   }
   &__burger{
     display: none;
@@ -139,6 +146,31 @@
       flex-direction: column;
       align-items: center;
       gap: 30px;
+    }
+  }
+  &__item{
+    transition: all ease 0.5s;
+    position: relative;
+    &::after{
+      content: '';
+      width: 0;
+      height: 1px;
+      background-image: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      transition: all ease 0.5s;
+    }
+    @media(hover:hover){
+      &:hover{
+        background-image: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
+        /* обрезаем фон по тексту */
+        background-clip: text;
+  -webkit-background-clip: text;
+        &::after{
+          width: 100%;
+        }
+      }
     }
   }
 }

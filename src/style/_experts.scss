@@ -102,7 +102,7 @@
     }
   }
   &__item{
-    width: 335px;
+    width: 335px !important;
     min-height: 616px;
     &.digital{
       .experts__photo,
@@ -135,7 +135,7 @@
         }
       }
       @media (max-width: 1400px) {
-        width: 245px;
+        width: 245px !important;
       }
   }
   &__photo{
