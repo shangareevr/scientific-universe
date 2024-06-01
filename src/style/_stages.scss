@@ -76,18 +76,15 @@
     img{
       position: absolute;
       width: 100%;
-      transition: all 0.5s ease;
+      transition: all 0.6s ease;
     }
     .img1{
-      opacity: 1;
       animation: show1 15s linear infinite;
     }
     .img2{
-      opacity: 0;
       animation: show2 15s linear infinite;
     }
     .img3{
-      opacity: 0;
       animation: show3 15s linear infinite;
     }
     @media(max-width:1400px){
@@ -288,54 +285,57 @@
 
 @keyframes show1 {
   0% {
-    opacity: 1;
+    display: inline-block;
   }
   30% {
-   opacity: 1;
+    display: inline-block;
   }
   31% {
-    opacity: 0;
+    display: none;
   }
   90% {
-    opacity: 1;
+    display: inline-block;
   }
   100%{
-    opacity: 1;
+    display: inline-block;
   }
 }
 
 @keyframes show2 {
   0% {
-    opacity: 0;
+    display: none;
   }
   30% {
-    opacity: 1;
+    display: inline-block;
   }
   66%{
-    opacity: 1;
+    display: inline-block;
   }
   66%{
-    opacity: 0;
+    display: none;
   }
   100%{
-    opacity: 0;
+    display: none;
   }
 }
 
 @keyframes show3 {
   0% {
-   opacity: 0;
+    display: none;
   }
   33% {
-    opacity: 0;
+    display: none;
   }
   66%{
-    opacity: 1;
+    display: inline-block;
   }
   90%{
-    opacity: 1;
+    display: inline-block;
+  }
+  90%{
+    display: none;
   }
   100%{
-    opacity: 0;
+    display: none;
   }
 }

@@ -59,6 +59,7 @@
   }
   &__btns{
     display: flex;
+    color: #ffffff;
     gap: 10px;
     @media(max-width:1000px){
       flex-direction: column;
@@ -75,10 +76,11 @@
     background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
     width: fit-content;
     text-transform: uppercase;
-    transition: all ease 0.3s;
+    transition: all ease 0.6s;
     @media(hover:hover){
       &:hover{
         background: #6625A5;
+
       }
     }
   }
@@ -97,7 +99,7 @@
         height: 2px;
         background-color: #ffffff;
         position: relative;
-        transition: all ease 0.3s;
+        transition: all ease 0.6s;
         &::after,
         &::before{
           content: '';
@@ -106,7 +108,7 @@
           width: 18px;
           height: 2px;
           background-color: #ffffff;
-          transition: all ease 0.3s;
+          transition: all ease 0.6s;
         }
         &::after{
           bottom: -7px;
@@ -149,21 +151,21 @@
     }
   }
   &__item{
-    transition: all ease 0.5s;
+    transition: all ease 0.6s;
     position: relative;
     &::after{
       content: '';
       width: 0;
       height: 1px;
-      background-image: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
+      background-color: #6625A5;
       display: block;
       position: absolute;
       bottom: -3px;
-      transition: all ease 0.5s;
+      transition: all ease 0.6s;
     }
     @media(hover:hover){
       &:hover{
-        background-image: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
+        color: #6625A5;
         /* обрезаем фон по тексту */
         background-clip: text;
   -webkit-background-clip: text;

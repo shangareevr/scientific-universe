@@ -7,6 +7,7 @@ $('.major__slider-wrapper').slick({
   prevArrow: $('.major__prev'),
   nextArrow: $('.major__next'),
 });
+
 $('.experts__slider_wrapper').slick({
   infinite: true,
   speed: 500,
