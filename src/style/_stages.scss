@@ -159,7 +159,31 @@
     }
     @media(max-width:600px){
       width: 100%;
+      &:last-child{
+        .stages__icon{
+          display: block;
+        }
+      }
     }
+    &_left{
+      @media(max-width:600px){
+        .stages__icon{
+          left: 5px;
+        }
+        .stages__el{
+          padding-left: 15px;
+        }
+        .stages__text{
+          margin-top: 10px;
+        }
+      }
+      &:last-child{
+        .stages__icon{
+          display: block;
+        }
+      }
+    }
+
   }
   &__header{
     display: flex;
@@ -260,6 +284,12 @@
       margin-top: 10px;
       &:last-child{
         margin-bottom: 10px;
+      }
+      @media(max-width:600px){
+        margin-top: 5px;
+        &:last-child{
+          margin-bottom: 5px;
+        }
       }
       img{
         width: 25px;

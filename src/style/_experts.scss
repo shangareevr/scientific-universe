@@ -65,7 +65,6 @@
       margin-top: 10px;
       font-size: 16px;
       position: relative;
-      justify-content: flex-end;
       align-items: flex-end;
     }
   }
@@ -73,12 +72,16 @@
     @media (max-width: 800px) {
       position: relative;
       width: 78%;
-      width: max-content;
     }
   }
   &__arrows{
     display: flex;
     gap: 10px;
+    @media(max-width:800px){
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
   }
   &__arrow{
     background: linear-gradient(to right,rgba(226, 23, 139, 1), rgba(251, 94, 23, 1));
@@ -99,6 +102,7 @@
     }
     @media(max-width:800px){
       margin-top: 20px;
+
     }
   }
   &__item{

@@ -1,9 +1,6 @@
 .major{
   background-size: cover;
-  border-radius: 0 0 200px 200px;
-  @media(max-width:1020px){
-    border-radius: 0;
-  }
+  border-radius: 0 0 clamp(50px, 10vw, 200px) clamp(50px, 10vw, 200px);
   &__wrapper{
     max-width: 1510px;
     padding-left: 55px;
@@ -32,7 +29,9 @@
     @media(max-width:1020px){
       order: 2;
       margin-top: -15px;
-      
+    }
+    @media(max-width:600px){
+      margin-top: -146px;
     }
   }
   &__title{
@@ -103,26 +102,32 @@
     transition: all ease 0.6s;
     position: relative;
     z-index: 6;
+    path{
+      transition: all ease 0.5s;
+    }
     @media(max-width:1500px){
       padding:14px 30px;
       font-size: 20px;
       gap:10px;
       text-align: center;
     }
-    img{
-      width: auto;
-      height: 20px;
-    }
     @media(max-width:800px){
       font-size: 18px;
       padding: 10px 30px;
-      gap: 5px;
+      svg{
+        width: 12px;
+        height: 14px;
+      }
     }
+
     @media(hover:hover){
       &:hover{
         cursor: pointer;
         background-color: rgba(102, 37, 165, 1);
         color: #ffffff;
+          path{
+            fill:white;
+          }
       }
     }
   }
@@ -207,6 +212,7 @@
     @media(max-width:1750px){
       right: 0;
       width: 455px;
+      height: 600px;
     }
     &-wrapper{
       .slick-slide{
@@ -226,11 +232,16 @@
         z-index: 3;
       }
     }
-    @media(max-width:1400px){
+    @media(max-width:1200px){
       width: 400px;
     }
+    @media(max-width:1020px){
+      top: -30px;
+    }
     @media(max-width:600px){
-      width: 260px;
+      width: 100%;
+      top: -41px;
+      height: 504px;
     }
   }
   &__slide{
@@ -254,10 +265,12 @@
       top: 106px;
       left: 41px;
     }
-    @media(max-width:800px){
-      top: 43%;
-      left: -15px;
-      height: 30px;
+    @media(max-width:600px){
+      top: 39.5%;
+      left: 17px;
+      svg{
+        width: 18px;
+      }
     }
     @media(hover:hover){
       &:hover{
@@ -269,7 +282,7 @@
   }
   &__next{
     position: absolute;
-    bottom: 145px;
+    bottom: 133px;
     right: 157px;
     z-index: 5;
     transition: all ease 0.6s;
@@ -277,10 +290,16 @@
       bottom: 48px;
       right: 45px;
     }
-    @media(max-width:800px){
-      top: 43%;
-      right: -15px;
-      height: 30px;
+    @media(max-width:1200px){
+      bottom: 0px;
+      right: 45px;
+    }
+    @media(max-width:600px){
+      top: 39.5%;
+      right: 17px;
+      svg{
+        width: 18px;
+      }
     }
     @media(hover:hover){
       &:hover{
@@ -310,7 +329,10 @@
       }
     }
     @media(max-width:1750px){
-      margin-top: -7px;
+      margin-top: 15px;
+    }
+    @media(max-width:1200px){
+      margin-top: 31px;
     }
     @media(max-width:1020px){
       margin-top: 47px;
@@ -334,12 +356,12 @@
     }
   }
   @media(max-width:600px){
-    background-position: 41px 50px !important;
-    background-size: 207px !important;
+    background-position: 51% 44% !important;
+    background-size: 204px !important;
     img{
-      right: -1px !important;
-        width: 260px !important;
-        top: -7px !important;
+      left: calc(44vw - 128px) !important;
+      width: 260px !important;
+      top: 7px !important;
     }
   }
 }
@@ -359,6 +381,15 @@
         top: -7px !important;
     }
   }
+  @media(max-width:600px){
+    background-position: 51% 51% !important;
+    background-size: 204px !important;
+    img{
+      left: calc(44vw - 128px) !important;
+      width: 260px !important;
+      top: 0px !important;
+    }
+  }
 }
 .slide3{
   background-position: right 55px top 75px !important;
@@ -374,6 +405,15 @@
       right: -1px !important;
         width: 400px !important;
         top: -7px !important;
+    }
+  }
+  @media(max-width:600px){
+    background-position: 51% 44% !important;
+    background-size: 204px !important;
+    img{
+      left: calc(44vw - 138px) !important;
+      width: 260px !important;
+      top: 1px !important;
     }
   }
 }
@@ -393,6 +433,15 @@
         top: -70px !important;
     }
   }
+  @media(max-width:600px){
+    background-position: 51% 33% !important;
+    background-size: 204px !important;
+    img{
+      left: calc(44vw - 133px) !important;
+      width: 260px !important;
+      top: -21px !important;
+    }
+  }
 }
 .slide5{
   background-position: right 55px top 75px !important;
@@ -410,6 +459,22 @@
       right: 109px !important;
       width: 600px !important;
       top: 70px !important;
+    }
+  }
+  @media(max-width:600px){
+    background-position: 51% 21% !important;
+    background-size: 204px !important;
+    img{
+      left: -17% !important;
+      width: 100% !important;
+      top: 10% !important;
+    }
+  }
+  @media(max-width:400px){
+    img{
+      left: -18% !important;
+      width: 115% !important;
+      top: 9% !important;
     }
   }
 }
@@ -433,6 +498,15 @@
       top: -70px !important;
     }
   }
+  @media(max-width:600px){
+    background-position: 51% 21% !important;
+    background-size: 204px !important;
+    img{
+      left: calc(44vw - 80px) !important;
+      width: 190px !important;
+      top: 5px !important;
+    }
+  }
 }
 
 
@@ -452,6 +526,15 @@
       top: 0 !important;
     }
   }
+  @media(max-width:600px){
+    background-position: 51% 22% !important;
+    background-size: 204px !important;
+    img{
+      left: calc(44vw - 59px) !important;
+      width: 200px !important;
+      top: 30px !important;
+    }
+  }
 }
 
 .slide8{
@@ -468,6 +551,15 @@
       right: -1px !important;
       width: 320px !important;
       top: -30px !important;
+    }
+  }
+  @media(max-width:600px){
+    background-position: 45% 21% !important;
+    background-size: 204px !important;
+    img{
+      left: calc(44vw - 120px) !important;
+      width: 190px !important;
+      top: 9px !important;
     }
   }
 }

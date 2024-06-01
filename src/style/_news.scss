@@ -47,6 +47,9 @@
     }
     @media(max-width:800px){
       margin-top: 20px;
+      .slick-track{
+        gap: 10px;
+      }
     }
   }
   &__item{

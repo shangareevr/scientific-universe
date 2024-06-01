@@ -22,9 +22,10 @@
       padding: 60px 40px;
       gap: 60px;
     }
-    @media(max-width: 1200px){
+    @media(max-width: 1000px){
       gap: 20px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
     }
     @media(max-width: 800px){
       padding: 40px 10px;
@@ -34,7 +35,7 @@
     max-width: 836px;
     @media(max-width:1400px){
       flex-shrink: 1;
-      width: 524px;
+      max-width: 524px;
     }
   }
   &__title{

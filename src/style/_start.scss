@@ -1,0 +1,26 @@
+.start{
+  background-size: cover;
+  border-radius: 0 0 clamp(50px, 10vw, 200px) clamp(50px, 10vw, 200px);
+  &__wrapper{
+    margin: 0 auto;
+    max-width: 1480px;
+    padding: 178px 40px 112px 40px;
+    @media(max-width:1400px){
+      padding: 104px 40px 65px 40px;
+    }
+    @media(max-width:800px){
+      padding: 83px 10px 116px 10px;
+    }
+  }
+  &__title{
+    font-size: 80px;
+    line-height: 1em;
+    text-transform: uppercase;
+    @media(max-width:1400px){
+      font-size: 50px;
+    }
+    @media(max-width:800px){
+      font-size: 40px;
+    }
+  }
+}

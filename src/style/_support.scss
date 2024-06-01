@@ -7,7 +7,7 @@
       margin-top: 80px;
     }
     @media(max-width:800px){
-      margin-top: 50px;
+      margin-top: 20px;
     }
   }
   &__title{
@@ -22,7 +22,8 @@
     }
     @media(max-width:800px){
       padding: 0 10px;
-      font-size: 30px;
+        font-size: 30px;
+        margin-top: 35px;
     }
   }
   &__subtitle{
@@ -54,6 +55,11 @@
         }
     }
   }
+  &__stategic{
+    @media(max-width:600px){
+      margin-bottom: -10px;
+    }
+  }
   &__stategic_slide{
     width: 238.75px !important;
     height: 100px !important;
@@ -76,10 +82,6 @@
       margin-top: 10px;
     }
   }
-  &__info{
-    margin-top: 20px;
-  }
-
   &__bubl{
     position: absolute;
     width: 220px;
