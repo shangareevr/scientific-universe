@@ -138,6 +138,9 @@
       top: -112px;
       left: -31px;
     }
+    @media(max-width: 1000px){
+      left: -40px;
+    }
     @media(max-width: 800px){
       display: none;
     }

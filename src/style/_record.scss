@@ -1,0 +1,122 @@
+.record{
+  &__wrapper{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 34px;
+    @media(max-width:1400px){
+      padding-bottom: 0px;
+    }
+    @media(max-width:1000px){
+      padding: 0 10px;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    @media(max-width:800px){
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+      padding-bottom: 23px;
+    }
+  }
+  &__item{
+    background-color: #F8F6F9;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    @media(max-width:800px){
+      padding: 20px;
+    }
+  }
+  &__top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inter';
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    @media(max-width:800px){
+      gap: 10px;
+      img{
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  &__author{
+    font-family: 'Inter';
+    span{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.5em;
+    }
+    p{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.21;
+    }
+    @media(max-width:800px){
+      p{
+        font-size: 16px;
+        line-height: 19.36px;
+      }
+      span{
+        font-size: 12px;
+      }
+    }
+  }
+  &__text{
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+  &__name{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 23.16px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    p{
+      text-transform: uppercase;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+    }
+    @media(max-width:800px){
+      margin-top: 12px;
+      font-size: 16px;
+      line-height: 18.53px;
+      img{
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+  &__date{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5em;
+    @media(max-width:800px){
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+}

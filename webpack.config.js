@@ -20,6 +20,9 @@ module.exports = {
     index: path.resolve(__dirname, 'src', 'index.js'),
     novosti: path.resolve(__dirname, 'src', 'novosti.js'),
     item: path.resolve(__dirname, 'src', 'item.js'),
+    webinars: path.resolve(__dirname, 'src', 'webinars.js'),
+    lesson: path.resolve(__dirname, 'src', 'lesson.js'),
+    provisions: path.resolve(__dirname, 'src', 'provisions.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -43,6 +46,23 @@ module.exports = {
       filename: 'item.html',
 			chunks: ['item'],
 		}),
+    new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'src', 'webinars.html'),
+      filename: 'webinars.html',
+			chunks: ['webinars'],
+		}),
+    new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'src', 'lesson.html'),
+      filename: 'lesson.html',
+			chunks: ['lesson'],
+		}),
+    new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'src', 'provisions.html'),
+      filename: 'provisions.html',
+			chunks: ['provisions'],
+		}),
+
+    
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),

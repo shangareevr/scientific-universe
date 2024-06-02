@@ -1,0 +1,320 @@
+.material{
+  &__wrapper{
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 40px;
+    margin-top: 60px;
+    font-family: 'Inter';
+    padding-bottom: 37px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    @media(max-width:1400px){
+      margin-top: 35px;
+      gap: 20px;
+    }
+    @media(max-width:1000px){
+      padding: 0 10px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+    @media(max-width:800px){
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  &__video{
+    iframe{
+      border-radius: 20px;
+    }
+    @media(max-width:1400px){
+      iframe{
+        width: 650px;
+        height: 366px;
+      }
+    }
+    @media(max-width:1000px){
+      iframe{
+        width: 50vw;
+        height: 366px;
+      }
+    }
+    @media(max-width:800px){
+      iframe{
+        width: calc(100vw - 20px);
+        height: 366px;
+      }
+    }
+    @media(max-width:500px){
+      iframe{
+        width: calc(100vw - 20px);
+        height: 192px;
+      }
+    }
+  }
+
+  &__cart{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #F8F6F9;
+    flex-shrink: 1;
+    max-width: 433px;
+    @media(max-width:1400px){
+      padding:20px;
+    }
+    @media(max-width:800px){
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  &__date{
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 100px;
+    @media(max-width:1400px){
+      padding:5px 10px;
+      font-size: 12px;
+    }
+  }
+  &__author{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    span{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5em;
+    }
+    p{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21.78px;
+    }
+    @media(max-width:1400px){
+      gap: 10px;
+      img{
+        width: 60px;
+        height: 60px;
+      }
+      span{
+        font-size: 12px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 19.36px;
+      }
+    }
+  }
+  &__text{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    @media(max-width:1400px){
+      margin-top: 8px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+.slider{
+  &__wrapper{
+    max-width: 1480px;
+    padding: 0 40px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 35px;
+    @media(max-width:1400px){
+      margin-top: 40px;
+      padding-bottom: 0;
+    }
+    @media(max-width:1000px){
+      padding: 0;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+    @media(max-width:800px){
+      padding-bottom: 20px;
+    }
+  }
+
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width:1000px){
+      padding-right: 10px;
+    }
+  }
+  &__title{
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1em;
+    @media(max-width:1400px){
+      font-size: 30px;
+    }
+    @media(max-width: 800px){
+      font-size: 25px;
+    }
+  }
+  &__arrows{
+    display: flex;
+    gap: 10px;
+  }
+  &__arrow{
+    background: linear-gradient(to right, rgb(226, 23, 139), rgb(251, 94, 23));
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.6s;
+    justify-content: center;
+  }
+  &__list{
+    margin-top: 40px;
+    .slick-track{
+      display: flex;
+      gap: 20px;
+    }
+    @media(max-width:1400px){
+      margin-top: 30px;
+    }
+    @media(max-width:800px){
+      margin-top: 20px;
+      .slick-track{
+        gap: 10px;
+      }
+    }
+  }
+  &__item{
+    width: 690px !important;
+    background-color: #F8F6F9;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    font-family: 'Inter';
+    @media(max-width:1400px){
+      width: 462px !important;
+    }
+    @media(max-width:800px){
+      padding: 20px;
+      width: 320px !important;
+    }
+  }
+  &__el{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    font-family: 'Inter';
+    img{
+      width: 80px;
+      height: 80px;
+    }
+    span{
+      font-size: 14px;
+      line-height: 1.5em;
+      font-weight: 400;
+    }
+    p{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21.78px;
+    }
+    @media(max-width:800px){
+      gap: 10px;
+      img{
+        width: 60px;
+        height: 60px;
+      }
+      span{
+        font-size: 12px;
+      }
+      p{
+        font-size: 16px;
+        line-height: 19.36px;
+      }
+    }
+  }
+  &__date{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 100px;
+    line-height: 1.5em;
+    font-family: 'Inter';
+    @media(max-width:800px){
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  &__text{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+  &__name{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    align-items: flex-end;
+    font-family: 'HalvarBreit';
+    font-size: 20px;
+    line-height: 23.16px;
+    img{
+      width: 32px;
+      height: 32px;
+    }
+    @media(max-width:800px){
+      font-size: 16px;
+      line-height: 18.53px;
+      margin-top: 13px;
+      gap: 5px;
+      img{
+        width: 26px;
+        height: 26px;
+      }
+    }
+  }
+  &__all{
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: linear-gradient(to right, rgb(226, 23, 139), rgb(251, 94, 23));
+    padding: 17px 50px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.5em;
+    border-radius: 100px;
+    transition: all ease 0.6s;
+    color: white !important;
+    @media(max-width:1400px){
+      margin-top: 30px;
+    }
+    @media(max-width:800px){
+      margin-top: 20px;
+      padding: 10.5px 30px;
+      font-size: 15px;
+    }
+  }
+}

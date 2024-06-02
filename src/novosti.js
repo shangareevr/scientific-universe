@@ -5,6 +5,6 @@ $('.header__burger').click(function(){
   $('.header__nav').toggleClass('active');
 })
 $('.article__show').click(function(){
-    $('.article__wrapper').addClass('active');
+    $('.article__item').show();
     $(this).hide();
 })
