@@ -23,6 +23,9 @@ module.exports = {
     webinars: path.resolve(__dirname, 'src', 'webinars.js'),
     lesson: path.resolve(__dirname, 'src', 'lesson.js'),
     provisions: path.resolve(__dirname, 'src', 'provisions.js'),
+    rules: path.resolve(__dirname, 'src', 'rules.js'),
+    page404: path.resolve(__dirname, 'src', 'page404.js'),
+    page403: path.resolve(__dirname, 'src', 'page403.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -61,8 +64,21 @@ module.exports = {
       filename: 'provisions.html',
 			chunks: ['provisions'],
 		}),
-
-    
+    new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'src', 'rules.html'),
+      filename: 'rules.html',
+			chunks: ['rules'],
+		}),
+    new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'src', 'page404.html'),
+      filename: 'page404.html',
+			chunks: ['page404'],
+		}),
+    new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'src', 'page403.html'),
+      filename: 'page403.html',
+			chunks: ['page403'],
+		}),    
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),

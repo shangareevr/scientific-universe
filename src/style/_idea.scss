@@ -38,6 +38,9 @@
       max-width: 524px;
       width: min-content;
     }
+    @media(max-width:600px){
+      width: 100%;
+    }
   }
   &__title{
     font-size: 80px;

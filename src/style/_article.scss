@@ -7,14 +7,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    // max-height: 1780px;
-    // overflow: hidden;
-
-    // &.active{
-    //   max-height: fit-content !important;
-    // }
     @media(max-width:1400px){
       row-gap: 38px;
+      margin-top: 40px;
     }
     @media(max-width:1000px){
       grid-template-columns: repeat(2, 1fr);

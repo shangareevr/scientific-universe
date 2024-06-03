@@ -103,7 +103,7 @@
     position: relative;
     z-index: 6;
     path{
-      transition: all ease 0.5s;
+      transition: all ease 0.6s;
     }
     @media(max-width:1500px){
       padding:14px 30px;
@@ -402,7 +402,7 @@
     background-position: 41px 50px !important;
     background-size: 317px !important;
     img{
-      right: -1px !important;
+      right: 5px !important;
         width: 400px !important;
         top: -7px !important;
     }
@@ -439,7 +439,7 @@
     img{
       left: calc(44vw - 133px) !important;
       width: 260px !important;
-      top: -21px !important;
+      top: -36px !important;
     }
   }
 }
@@ -485,7 +485,7 @@
   background-position: right 55px top 75px !important;
   background-image: url('../img/fon_slide6.svg');
   img{
-    right: -222px !important;
+    right: -266px !important;
     top: -9px !important;
   }
   @media(max-width:1750px){
@@ -493,16 +493,16 @@
     background-size: 317px !important;
     height: 500px !important;
     img{
-      right: -1px !important;
-      width: 330px !important;
-      top: -70px !important;
+      right: -33px !important;
+      width: 310px !important;
+      top: -21px !important;
     }
   }
   @media(max-width:600px){
     background-position: 51% 21% !important;
     background-size: 204px !important;
     img{
-      left: calc(44vw - 80px) !important;
+      left: calc(44vw - 109px) !important;
       width: 190px !important;
       top: 5px !important;
     }
@@ -521,17 +521,17 @@
     background-size: 317px !important;
     height: 500px !important;
     img{
-      right: -1px !important;
-      width: 400px !important;
-      top: 0 !important;
+      right: -16px !important;
+      width: 360px !important;
+      top: 36px !important;
     }
   }
   @media(max-width:600px){
     background-position: 51% 22% !important;
     background-size: 204px !important;
     img{
-      left: calc(44vw - 59px) !important;
-      width: 200px !important;
+      left: calc(44vw - 100px) !important;
+        width: 210px !important;
       top: 30px !important;
     }
   }
@@ -548,18 +548,18 @@
     background-size: 317px !important;
     height: 500px !important;
     img{
-      right: -1px !important;
-      width: 320px !important;
-      top: -30px !important;
+      right: -28px !important;
+      width: 284px !important;
+      top: 12px !important;
     }
   }
   @media(max-width:600px){
     background-position: 45% 21% !important;
     background-size: 204px !important;
     img{
-      left: calc(44vw - 120px) !important;
-      width: 190px !important;
-      top: 9px !important;
+      left: calc(44vw - 104px) !important;
+      width: 176px !important;
+      top: 20px !important;
     }
   }
 }
