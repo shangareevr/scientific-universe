@@ -26,6 +26,7 @@ module.exports = {
     rules: path.resolve(__dirname, 'src', 'rules.js'),
     page404: path.resolve(__dirname, 'src', 'page404.js'),
     page403: path.resolve(__dirname, 'src', 'page403.js'),
+    results: path.resolve(__dirname, 'src', 'results.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -78,7 +79,14 @@ module.exports = {
 			template: path.resolve(__dirname, 'src', 'page403.html'),
       filename: 'page403.html',
 			chunks: ['page403'],
-		}),    
+		}), 
+    new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, 'src', 'results.html'),
+      filename: 'results.html',
+			chunks: ['results'],
+		}),
+    
+    
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),

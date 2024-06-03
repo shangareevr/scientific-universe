@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Итоги</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper header__wrapper_small">
+      <a href="./index.html" class="header__logo header__logo_small">
+        <img  src="./img/logo.png" alt="Научная Вселенная">
+      </a>
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li><a href="./results.html" class="nav__item">Итоги</a></li>
+          <li><a href="./webinars.html" class="nav__item">Вебинары</a></li>
+          <li><a href="./news.html" class="nav__item">Новости</a></li>
+        </ul>
+        <div class="header__btns">
+          <a href="" class="header__btn">Регистрация</a>
+          <a href="" class="header__btn">Вход</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="res__top">
+      <div class="res__titles">
+        <h1 class="res__title">итоги конкурса</h1>
+        <p class="res__date">2023 года</p>
+      </div>
+      <div class="winner__border">
+        <div class="select" data-state="">
+          <div class="select__title" data-default="Option 0" data-year="2023">2023 год</div>
+          <div class="select__content">
+            <input class="select__input" type="text" id="2023" type="radio" name="year" checked="checked">
+            <label for="2023" class="select__label">2023 год</label>
+            <input class="select__input" type="text" id="2024" type="radio" name="year">
+            <label for="2024" class="select__label">2024 год</label>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="tab__item">
+      <section class="res" style="background-image:url('./img/bg.png');">
+        <div class="res__wrapper">
+          <h2 class="res__subtitle">зарегистрированные треки</h2>
+          <div class="res__list">
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon digital">
+                  <img src="./img/track_icon_01.svg" alt="">
+                </div>
+                <div class="res__name digital">Цифровые<br>технологии</div>
+              </div>
+              <div class="res_elem">
+                <div class="res__count">953</div>
+                <p>активных участника</p>
+              </div>
+                            
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon genetics">
+                  <img src="./img/track_icon_02.svg" alt="">
+                </div>
+                <div class="res__name genetics">Генетика <br> и медицина </div>
+              </div>
+              <div class="res_elem">
+                <div class="res__count">953</div>
+                <p>активных участника</p>
+              </div>
+                            
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon energy">
+                  <img src="./img/track_icon_03.svg" alt="">
+                </div>
+                <div class="res__name energy">Новые источники энергии</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon arctic">
+                  <img src="./img/track_icon_04.svg" alt="">
+                </div>
+                <div class="res__name arctic">Развитие<br>Арктики</div>
+              </div>
+              <div class="res_elem">
+                <div class="res__count">953</div>
+                <p>активных участника</p> 
+              </div>
+                           
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon cosmos">
+                  <img src="./img/track_icon_05.svg" alt="">
+                </div>
+                <div class="res__name cosmos">Освоение<br>космоса</div>
+              </div>
+              <div class="res__elem">
+                <div class="res__count">953</div>
+                <p>активных участника</p>
+              </div>
+                            
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon  ecology">
+                  <img src="./img/track_icon_06.svg" alt="">
+                </div>
+                <div class="res__name ecology">Климат<br>и экология</div>
+              </div>
+              <div class="res__elem">
+                <div class="res__count">953</div>
+                <p>активных участника</p>
+              </div>
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon technologies">
+                  <img src="./img/track_icon_07.svg" alt="">
+                </div>
+                <div class="res__name technologies">Агробио-<br>технологии</div>
+              </div>
+              <div class="res__elem">
+                <div class="res__count">953</div>
+                <p>активных участника</p>
+              </div>
+                            
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon science">
+                  <img src="./img/track_icon_08.svg" alt="">
+                </div>
+                <div class="res__name science">Наука<br>и общество</div>
+              </div>
+              <div class="res__elem">
+                <div class="res__count">953</div>
+                <p>активных участника</p>
+              </div>
+                            
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="total">
+        <div class="total__wrapper">
+          <h2 class="total__title">участники</h2>
+          <div class="total__item">
+            <p>322 265</p>
+            <span>всего участников</span>
+          </div>
+          <div class="total__row">
+            <div class="total__item">
+              <p>4 464</p>
+              <span>активных участников</span>
+            </div>
+            <div class="total__item">
+              <p>98</p>
+              <span>подали проектную заявку</span>
+            </div>
+          </div>
+          <img class="total__img" src="./img/ermak_x5F_03.svg" alt="">
+        </div>
+      </section>
+      <section class="experts">
+        <div class="experts__wrapper experts__wrapper_top">
+          <div class="experts__head">
+            <div class="experts__top">
+              <h2 class="experts__title experts__title_small">эксперты</h2>
+
+              </div>
+              <div class="experts__arrows experts__arrows_fixed">
+                <div class="experts__arrow experts__prev">
+                  <img src="./img/prev-ar.svg" alt="Предыдущий">
+                </div>
+                <div class="experts__arrow experts__next">
+                  <img src="./img/next-ar.svg" alt="Следующий">
+                </div>
+              </div>
+          </div>
+          <div class="experts__slider">
+            <div class="experts__slider_wrapper">
+              <div class="experts__item digital">
+                <div class="experts__photo">
+                  <img src="./img/image-7.png" alt="">
+                </div>
+                <div class="experts__name">Алексей Федоров</div>
+                <div class="experts__category">
+                  <p>ЦИФРОВЫЕ ТЕХНОЛОГИИ</p>
+                  <img src="./img/track_icon_01.svg" alt="">
+                </div>
+                <p class="experts__desc">
+                  PhD по теоретической физике, руководитель научной группы Российского квантового центра «Квантовые информационные технологии», профессор Московского физико-технического института (МФТИ), руководитель лаборатории теории квантовых коммуникаций НИТУ МИСИС
+                </p>
+              </div>
+              <div class="experts__item arctic">
+                <div class="experts__photo">
+                  <img src="./img/image-1.png" alt="">
+                </div>
+                <div class="experts__name">Александр Осадчиев</div>
+                <div class="experts__category">
+                  <p>РАЗВИТИЕ <br> АРКТИКИ</p>
+                  <img src="./img/track_icon_04.svg" alt="">
+                </div>
+                <p class="experts__desc">
+                  Доктор физико-математических наук, ведущий научный сотрудник Института океанологии им. П. П. Ширшова РАН</p>
+              </div>
+              <div class="experts__item ecology">
+                <div class="experts__photo">
+                  <img src="./img/image-2.png" alt="">
+                </div>
+                <div class="experts__name">Константин Вернигоров</div>
+                <div class="experts__category">
+                  <p>КЛИМАТ <br> И ЭКОЛОГИЯ</p>
+                  <img src="./img/track_icon_06.svg" alt="">
+                </div>
+                <p class="experts__desc">
+                  Кандидат химических наук, генеральный директор научно-исследовательского центра по разработке и тестированию продуктов из полимеров ООО «Сибур ПолиЛаб»
+                </p>
+              </div>
+              <div class="experts__item technologies">
+                <div class="experts__photo">
+                  <img src="./img/image-4.png" alt="">
+                </div>
+                <div class="experts__name">Ирина Тимофеева</div>
+                <div class="experts__category">
+                  <p>АГРОБИО- ТЕХНОЛОГИИ</p>
+                  <img src="./img/track_icon_07.svg" alt="">
+                </div>
+                <p class="experts__desc">
+                  Кандидат химических наук, профессор Института химии Санкт-Петербургского государственного университета
+                </p>
+              </div>
+              <div class="experts__item genetics">
+                <div class="experts__photo">
+                  <img src="./img/image-5.png" alt="">
+                </div>
+                <div class="experts__name">Максим Никитин</div>
+                <div class="experts__category">
+                  <p>ГЕНЕТИКА <br> И МЕДИЦИНА</p>
+                  <img src="./img/track_icon_05.svg" alt="">
+                </div>
+                <p class="experts__desc">
+                  Доктор физико-математических наук, ведущий научный сотрудник – заведующий лабораторией нанобиотехнологий МФТИ, руководитель направления «Нанобиомедицина» Научно-технологического университета «Сириус»
+                </p>
+              </div>
+              
+            </div>
+            <div class="experts__fon"></div>
+          </div>
+        </div>
+      </section>
+      <section class="trip" style="background-image: url(./img/bg.png);">
+        <div class="trip__wrapper">
+          <h2 class="trip__title">
+            поездки победителей
+          </h2>
+          <div class="trip__top">
+            <div class="trip__text">
+              7 победителей посетили научно-технологическую и производственную инфраструктуру партнеров в рамках 7 направлений НТР
+            </div>
+            <div class="trip__info">
+              Поездки победителей: 9-31 октября
+            </div>
+          </div>
+          <div class="trip__list">
+            <div class="trip__item">
+              <div class="trip__name">Российский квантовый&nbsp;центр</div>
+              <div class="trip__type digital">
+                <p>Цифровые технологии</p>
+                <img src="./img/track_icon_01.svg" alt="">
+              </div>
+            </div>
+            <div class="trip__item">
+              <div class="trip__name">
+                ПРОИЗВОДСТВО BIOCAD ИНСТИТУТ СТВОЛОВЫХ КЛЕТОК ЧЕЛОВЕКА
+              </div>
+              <div class="trip__type genetics">
+                <p>РАЗВИТИЕ <br>АРКТИКИ</p>
+                <img src="./img/track_icon_02.svg" alt="">
+              </div>
+            </div>
+            <div class="trip__item">
+              <div class="trip__name"> Саммит устойчивого развития «Сибирская перспектива» НОРНИКЕЛЯ
+              </div>
+              <div class="trip__type ecology">
+                <p>КЛИМАТ И&nbsp;ЭКОЛОГИЯ</p>
+                <img src="./img/track_icon_06.svg" alt="">
+              </div>
+            </div>
+            <div class="trip__item">
+              <div class="trip__name"> ГК «РОСАТОМ» ВЕТРЯНОЙ&nbsp;ПАРК В&nbsp;СТАВРОПОЛЬСКОМ КРАЕ
+              </div>
+              <div class="trip__type technologies">
+                <p>АГРОБИО-<br>ТЕХНОЛОГИИ</p>
+                <img src="./img/track_icon_07.svg" alt="">
+              </div>
+            </div>
+            <div class="trip__item">
+              <div class="trip__name"> КУРЧАТОВСКИЙ
+                ГЕНОМНЫЙ ЦЕНТР
+              </div>
+              <div class="trip__type technologies">
+                <p>ГЕНЕТИКА  и&nbsp;МЕДИЦИНА</p>
+                <img src="./img/track_icon_02.svg" alt="">
+              </div>
+            </div>
+            <div class="trip__item">
+              <div class="trip__name">СТАЖИРОВКА <br>QApp
+              </div>
+              <div class="trip__type energy">
+                <p>НОВЫЕ ИСТОЧНИКИ ЭНЕРГИИ</p>
+                <img src="./img/track_icon_03.svg" alt="">
+              </div>
+            </div>
+            <div class="trip__item trip__item_height">
+              <div class="trip__name">ПРОИЗВОДСТВО
+                ГРУЗОВОГО БЕСПИЛОТНОГО ТРАНСПОРТА КАМА
+              </div>
+              <div class="trip__type cosmos">
+                <p>Освоение космоса</p>
+                <img src="./img/track_icon_05.svg" alt="">
+              </div>
+            </div>
+            <div class="trip__item trip__item_cosmos">
+              <div class="trip__name">РОССИЙСКИЙ
+                КВАНТОВЫЙ ЦЕНТР
+              </div>
+              <div class="trip__type science">
+                <p>Наука <br>и общество</p>
+                <img src="./img/track_icon_08.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="report">
+        <div class="report__wrapper">
+          <iframe width="1280" height="720" src="https://rutube.ru/play/embed/398385a11c5a18d63f2b08f7fbadc26f?skinColor=e53935" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <div class="report__icon">отчетное видео</div>
+        </div>
+      </section>
+      <section class="winner">
+        <div class="winner__wrapper">
+          <div class="winner__top">
+            <h2 class="winner__title">
+              поБЕДИТЕЛИ <br> И&nbsp;ПРИЗЕРЫ
+
+            </h2>
+            <div class="winner__btns">
+              <div class="winner__border">
+                <div class="winner__btn">победители</div>
+              </div>
+              <div class="winner__border">
+                <div class="winner__btn">призеры</div>
+              </div>
+            </div>
+          </div>
+          <div class="winner__tabs">
+            <div class="winner__list">
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>Цифровые<br>технологии</p>
+                  <img src="./img/winner_01.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>РАЗВИТИЕ<br>АРКТИКИ</p>
+                  <img src="./img/winner_02.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>КЛИМАТ<br>И ЭКОЛОГИЯ</p>
+                  <img src="./img/winner_03.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>АГРОБИО-<br>ТЕХНОЛОГИИ</p>
+                  <img src="./img/winner_04.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>ГЕНЕТИКА<br>и МЕДИЦИНА</p>
+                  <img src="./img/winner_05.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>НОВЫЕ ИСТОЧНИКИ<br>ЭНЕРГИИ</p>
+                  <img src="./img/winner_06.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>Освоение<br>космоса</p>
+                  <img src="./img/winner_07.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>Наука<br>и общество</p>
+                  <img src="./img/winner_08.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              
+
+
+            </div>
+            <div class="winner__list">
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>Цифровые<br>технологии</p>
+                  <img src="./img/winner_01.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>РАЗВИТИЕ<br>АРКТИКИ</p>
+                  <img src="./img/winner_02.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>КЛИМАТ<br>И ЭКОЛОГИЯ</p>
+                  <img src="./img/winner_03.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>АГРОБИО-<br>ТЕХНОЛОГИИ</p>
+                  <img src="./img/winner_04.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>ГЕНЕТИКА<br>и МЕДИЦИНА</p>
+                  <img src="./img/winner_05.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>НОВЫЕ ИСТОЧНИКИ<br>ЭНЕРГИИ</p>
+                  <img src="./img/winner_06.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>Освоение<br>космоса</p>
+                  <img src="./img/winner_07.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              <div class="winner__item">
+                <div class="winner__img">
+                  <img src="./img/winner.png" alt="">
+                </div>
+                <div class="winner__name">
+                  <p>артем олифиренко</p>
+                  <span>Студент</span>
+                </div>
+                <div class="winner__category">
+                  <p>Наука<br>и общество</p>
+                  <img src="./img/winner_08.svg" alt="">
+                </div>
+                <div class="winner__theme">
+                  Тема проекта: Квантово-устойчивые платежи цифрового рубля — ЦВЦБ
+                </div>
+              </div>
+              
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="report">
+        <div class="report__wrapper  report__wrapper_padding">
+          <iframe width="1280" height="720" src="https://rutube.ru/play/embed/398385a11c5a18d63f2b08f7fbadc26f?skinColor=e53935" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <div class="report__icon">прямой эфир</div>
+        </div>
+      </section>
+    </div>
+    <div class="tab__item">
+      <section class="res" style="background-image:url('./img/bg.png');">
+        <div class="res__wrapper">
+          <h2 class="res__subtitle">зарегистрированные треки</h2>
+          <div class="res__list">
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon digital">
+                  <img src="./img/track_icon_01.svg" alt="">
+                </div>
+                <div class="res__name digital">Цифровые<br>технологии</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon genetics">
+                  <img src="./img/track_icon_02.svg" alt="">
+                </div>
+                <div class="res__name genetics">Генетика <br> и медицина </div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon energy">
+                  <img src="./img/track_icon_03.svg" alt="">
+                </div>
+                <div class="res__name energy">Новые источники энергии</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon arctic">
+                  <img src="./img/track_icon_04.svg" alt="">
+                </div>
+                <div class="res__name arctic">Развитие<br>Арктики</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon cosmos">
+                  <img src="./img/track_icon_05.svg" alt="">
+                </div>
+                <div class="res__name cosmos">Освоение<br>космоса</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon  ecology">
+                  <img src="./img/track_icon_06.svg" alt="">
+                </div>
+                <div class="res__name ecology">Климат<br>и экология</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon technologies">
+                  <img src="./img/track_icon_07.svg" alt="">
+                </div>
+                <div class="res__name technologies">Агробио-<br>технологии</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+            <div class="res__item">
+              <div class="res__el">
+                <div class="res__icon science">
+                  <img src="./img/track_icon_08.svg" alt="">
+                </div>
+                <div class="res__name science">Наука<br>и общество</div>
+              </div>
+              <div class="res__count">953</div>
+              <p>активных участника</p>              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="total total_top">
+        <div class="total__wrapper">
+          <h2 class="total__title">прошедшие тестирование</h2>
+          <div class="total__item">
+            <p>322 265</p>
+            <span>прошедших 1 этапа</span>
+          </div>
+          <div class="total__row">
+            <div class="total__item">
+              <p>4 464</p>
+              <span>прошедших 2 этапа</span>
+            </div>
+          </div>
+          <img class="total__img" src="./img/ermak_x5F_03.svg" alt="">
+        </div>
+      </section>
+      <section class="report">
+        <div class="report__wrapper  report__wrapper_padding">
+          <iframe width="1280" height="720" src="https://rutube.ru/play/embed/398385a11c5a18d63f2b08f7fbadc26f?skinColor=e53935" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          <div class="report__icon">прямой эфир</div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <a href="./index.html">
+          <img class="footer__logo" src="./img/footer_logo.svg" alt="">
+        </a>
+        <div class="footer__part">
+          <p>
+            ПРИ ПОДДЕРЖКЕ <br>МИНОБРНАУКИ РОССИИ
+          </p>
+          <div class="footer__imgs">
+            <img src="./img/gerb.svg" alt="">
+            <img src="./img/footer_icon.svg" alt="">
+          </div>
+        </div>
+        <p class="footer__title">
+          © АНО Большая культура, 2023
+        </p>
+      </div>
+      <ul class="footer__links">
+        <li class="footer__link"><a href="./results.html">Итоги</a></li>
+        <li class="footer__link"><a href="./webinars.html">Вебинары</a></li>
+        <li class="footer__link"><a href="./news.html">Новости</a></li>
+        <li class="footer__link"><a href="./provisions.html">Положения о конкурсе</a></li>
+        <li class="footer__link"><a href="./rules.html">Правила конкурса</a></li>
+      </ul>
+      <div class="footer__contacts">
+        <p>ПО ВОПРОСАМ <br> И ПРЕДЛОЖЕНИЯМ <br> МОЖНО ПИСАТЬ НА ПОЧТУ</p>
+        <a href="" class="footer__email">
+          <img src="./img/mail.svg" alt="">
+          <span>nauka@upbureau.ru</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

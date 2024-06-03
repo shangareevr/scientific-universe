@@ -8,10 +8,16 @@
     margin-top: 140px;
     @media (max-width: 1400px) {
       margin-top: 100px;
+      &_top{
+        margin-top: 76px;
+      }
     }
     @media (max-width: 800px) {
       margin-top: 70px;
       padding: 0 10px;
+      &_top{
+        margin-top: 50px;
+      }
     }
   }
   &__top{
@@ -41,12 +47,20 @@
     font-size: 80px;
     line-height: 1em;
     text-transform: uppercase;
+    &_small{
+      font-size: 60px;
+    }
     @media (max-width: 1400px) {
       font-size: 50px;
     }
     @media (max-width: 800px) {
       font-size: 30px;
     }
+  }
+  &__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
   &__block{
     max-width: 1400px;
@@ -81,6 +95,9 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      &_fixed{
+        position: static;
+      }
     }
   }
   &__arrow{
@@ -204,5 +221,9 @@
     width: 260px;
     height: 100%;
     background: linear-gradient(to right,rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1));
+    @media(max-width:1200px){
+      right: 210px;
+    }
   }
+
 }
