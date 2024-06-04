@@ -526,7 +526,7 @@
     @media(max-width:1400px){
       font-size: 16px;
     }
-    @media(max-width:800px){
+    @media(max-width:500px){
       max-width: 88%;
       br{
         display: block;
@@ -553,6 +553,7 @@
       padding: 10px 15px;
       align-items: center;
       gap: 50px;
+      border-radius: 10px;
       p{
         font-size: 16px;
       }
